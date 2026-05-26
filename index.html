@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Legalisering.se — Apostille, notarisering och legalisering i Stockholm</title>
+  <meta name="description" content="Notarius Publicus i Stockholm. Apostille, notarisering, UD-legalisering, ambassadlegalisering och översättning för dokument som ska användas utomlands.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/shared.js" defer></script>
+  <script src="js/home.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Hoppa till huvudinnehåll</a>
+  <header class="site-header" data-header></header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" data-annotation="Hero — situation framing + snabbstart entry till konfiguratorn">
+      <div class="container">
+        <div class="hero__grid">
+          <div>
+            <span class="eyebrow">Notarius Publicus i Stockholm</span>
+            <h1>Få dina svenska dokument godkända utomlands — utan att gissa.</h1>
+            <p class="lead">Apostille, notarisering, ambassadlegalisering och översättning. Berätta vart dokumentet ska, så visar vi exakt vad som krävs.</p>
+            <div class="btn-row">
+              <a href="configurator.html" class="btn-primary">Vad behöver du legalisera?</a>
+              <a href="#drop-in" class="btn-tertiary">Drop-in i Stockholm — öppet idag 9–16</a>
+            </div>
+          </div>
+          <aside class="quickstart" aria-label="Snabbstart">
+            <span class="quickstart__label">Snabbstart</span>
+            <form id="quickstart-form" novalidate>
+              <div class="field">
+                <label for="qs-country">Vart ska dokumentet?</label>
+                <select id="qs-country" required>
+                  <option value="">Välj land…</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="qs-doctype">Vilken typ av dokument?</label>
+                <select id="qs-doctype" required>
+                  <option value="">Välj dokumenttyp…</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-primary">Visa vad jag behöver</button>
+              <p class="quickstart__note">Tar ca 30 sekunder. Ingen registrering.</p>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audience routes -->
+    <section class="page-section page-section--surface" id="privat" data-annotation="Audience routes — tre likvärdiga ingångar (Privat / Företag / Drop-in)">
+      <div class="container">
+        <div class="section-header">
+          <h2>Var börjar du?</h2>
+        </div>
+        <div class="grid grid-3">
+          <a href="#privat" class="card audience-card">
+            <h3>Privat</h3>
+            <p>Du som privatperson — för bröllop, flytt, studier eller arv utomlands.</p>
+            <span class="card-arrow">Se vanliga situationer →</span>
+          </a>
+          <a href="#foretag" class="card audience-card" id="foretag">
+            <h3>Företag</h3>
+            <p>Exportdokument, internationella avtal och avtalskunder. Fakturering och egen kontaktperson.</p>
+            <span class="card-arrow">För företag →</span>
+          </a>
+          <a href="#drop-in" class="card audience-card">
+            <h3>Drop-in i Stockholm</h3>
+            <p>Apostille på 5 minuter. Kungsgatan 37, mitt i Stockholm. Inga tider behövs.</p>
+            <span class="card-arrow">Hitta hit →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Situations -->
+    <section class="page-section" data-annotation="Vanliga situationer — situation-first navigation (intent → service chain)">
+      <div class="container">
+        <div class="section-header">
+          <h2>Vanliga situationer</h2>
+          <p>Mest sökta anledningar att legalisera ett dokument.</p>
+        </div>
+        <div class="grid grid-3">
+          <a href="#" class="card situation-card">
+            <h3>Gifta sig utomlands</h3>
+            <p>Vigselbevis, hindersprövning och personbevis för en bröllopsceremoni utanför Sverige.</p>
+            <span class="card-arrow">→</span>
+          </a>
+          <a href="#" class="card situation-card">
+            <h3>Flytta utomlands</h3>
+            <p>Personbevis, äktenskapscertifikat och övriga papper för folkbokföring i ett nytt land.</p>
+            <span class="card-arrow">→</span>
+          </a>
+          <a href="#" class="card situation-card">
+            <h3>Studera utomlands</h3>
+            <p>Examensbevis, betyg och intyg som ska godkännas av utländska universitet.</p>
+            <span class="card-arrow">→</span>
+          </a>
+          <a href="#" class="card situation-card">
+            <h3>Arbeta utomlands</h3>
+            <p>Yrkeslegitimationer, intyg och anställningsavtal för en internationell tjänst.</p>
+            <span class="card-arrow">→</span>
+          </a>
+          <a href="#" class="card situation-card">
+            <h3>Arv och dödsbon</h3>
+            <p>Bouppteckning, fullmakter och dödsfallsintyg för ärenden över gränsen.</p>
+            <span class="card-arrow">→</span>
+          </a>
+          <a href="#" class="card situation-card">
+            <h3>Export till icke-EU-land</h3>
+            <p>Ursprungsintyg, ATA-carnet och övriga dokument för utomeuropeisk handel.</p>
+            <span class="card-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NP authority -->
+    <section class="page-section page-section--surface" id="om" data-annotation="Trust block — Notarius Publicus-auktoritet">
+      <div class="container">
+        <div class="split">
+          <div>
+            <span class="eyebrow">Notarius Publicus</span>
+            <h2>Auktoriserad av Länsstyrelsen</h2>
+            <p>Vi är Notarius Publicus, utsedda av Länsstyrelsen. Det betyder att vi är de enda i Sverige som får utfärda apostille — och att varje stämpel vi sätter är juridiskt giltig i de länder du behöver den.</p>
+            <p class="text-muted">Vårt team har över 50 års samlad erfarenhet av legalisering, och vi talar tillsammans svenska, engelska, arabiska, kinesiska, japanska, franska, spanska och tyska.</p>
+            <a href="#" class="btn-tertiary">Läs mer om Notarius Publicus →</a>
+          </div>
+          <div class="placeholder" data-label="Bild: Notarius Publicus stämpel">
+            <span>[Bild: Notarius Publicus stämpel + dokument]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="page-section" data-annotation="Tjänster — service catalog som backup till intent-led flöde">
+      <div class="container">
+        <div class="section-header">
+          <h2>Våra tjänster</h2>
+          <p>Sex kärntjänster som tillsammans täcker hela legaliseringsprocessen.</p>
+        </div>
+        <ul class="service-list">
+          <li>
+            <a href="#" class="service-row">
+              <div class="service-row__head">
+                <h3 class="service-row__name">Apostille</h3>
+                <span class="service-row__price">Från 499 kr</span>
+              </div>
+              <p class="service-row__desc">För länder i Haagkonventionen.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="service-row">
+              <div class="service-row__head">
+                <h3 class="service-row__name">Notarisering</h3>
+                <span class="service-row__price">Från 499 kr</span>
+              </div>
+              <p class="service-row__desc">Bestyrkande av underskrift, kopia eller översättning.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="service-row">
+              <div class="service-row__head">
+                <h3 class="service-row__name">UD-legalisering</h3>
+                <span class="service-row__price">Från 955 kr</span>
+              </div>
+              <p class="service-row__desc">För länder utanför Haagkonventionen.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="service-row">
+              <div class="service-row__head">
+                <h3 class="service-row__name">Ambassadlegalisering</h3>
+                <span class="service-row__price">Från 975 kr</span>
+              </div>
+              <p class="service-row__desc">När mottagarlandets ambassad ska bekräfta dokumentet.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="service-row">
+              <div class="service-row__head">
+                <h3 class="service-row__name">Översättning</h3>
+                <span class="service-row__price">Från 800 kr</span>
+              </div>
+              <p class="service-row__desc">Av auktoriserad översättare.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="service-row">
+              <div class="service-row__head">
+                <h3 class="service-row__name">Handelskammaren</h3>
+                <span class="service-row__price">Från 2 250 kr</span>
+              </div>
+              <p class="service-row__desc">För exportdokument.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="page-section page-section--surface" data-annotation="Team — människan bakom tjänsten (förtroende + språkkunskap)">
+      <div class="container">
+        <div class="section-header">
+          <h2>Träffa vårt team</h2>
+          <p>Personerna som hanterar ditt ärende. Vi är en grupp jurister och legaliseringsspecialister på Kungsgatan 37.</p>
+        </div>
+        <div class="grid grid-4">
+          <div class="card team-card">
+            <div class="placeholder" data-label="Porträtt: Amani"><span>[Porträtt]</span></div>
+            <h4>Amani</h4>
+            <p class="team-role">Jurist</p>
+            <p class="team-languages">Talar svenska, engelska, arabiska</p>
+          </div>
+          <div class="card team-card">
+            <div class="placeholder" data-label="Porträtt: Ilhem"><span>[Porträtt]</span></div>
+            <h4>Ilhem</h4>
+            <p class="team-role">Jurist</p>
+            <p class="team-languages">Talar svenska, engelska, arabiska, franska</p>
+          </div>
+          <div class="card team-card">
+            <div class="placeholder" data-label="Porträtt: Ludwig"><span>[Porträtt]</span></div>
+            <h4>Ludwig</h4>
+            <p class="team-role">Försäljningschef</p>
+            <p class="team-languages">Talar svenska, engelska</p>
+          </div>
+          <div class="card team-card">
+            <div class="placeholder" data-label="Porträtt: Jenny"><span>[Porträtt]</span></div>
+            <h4>Jenny</h4>
+            <p class="team-role">Jurist</p>
+            <p class="team-languages">Talar svenska, engelska, kinesiska</p>
+          </div>
+        </div>
+        <div class="mt-8">
+          <a href="#" class="btn-tertiary">Se hela teamet →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="page-section" data-annotation="Recensioner — social proof, Google rating">
+      <div class="container">
+        <div class="section-header">
+          <h2>4,9 av 5 på Google — över 2000 recensioner</h2>
+        </div>
+        <div class="grid grid-3">
+          <article class="card review-card">
+            <div class="stars" aria-label="5 av 5">★★★★★</div>
+            <p class="review-text">Snabba, professionella och tydliga. Fick mitt vigselbevis legaliserat för Spanien på två dagar. Hela processen kändes trygg.</p>
+            <p class="review-meta">Birgitta N., 2026-04-12</p>
+          </article>
+          <article class="card review-card">
+            <div class="stars" aria-label="5 av 5">★★★★★</div>
+            <p class="review-text">Som löste mina papperbekymmer med legaliseringar och ambassader och stämplar och hela alltet. Skickade originalen ner till mig i Thailand. Snacka om service.</p>
+            <p class="review-meta">Axel S., 2026-03-28</p>
+          </article>
+          <article class="card review-card">
+            <div class="stars" aria-label="5 av 5">★★★★★</div>
+            <p class="review-text">Superbra och smidig service. Kunde lösa allt online då jag inte hade möjlighet att åka till deras kontor i Stockholm.</p>
+            <p class="review-meta">Ajla C., 2026-03-15</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drop-in -->
+    <section class="page-section page-section--alt" id="drop-in" data-annotation="Drop-in — fysisk närvaro + lokal SEO-signal">
+      <div class="container">
+        <div class="split">
+          <div>
+            <span class="eyebrow">Stockholm</span>
+            <h2>Drop-in i Stockholm</h2>
+            <p>Behöver du apostille snabbt? Kom till Kungsgatan 37, 4:e våningen. Vi tar emot mån–fre 9–16. Du behöver inte boka tid. De flesta ärenden är klara på 5 minuter.</p>
+            <ul class="dropin-list">
+              <li>Öppet: 9–16, mån–fre</li>
+              <li>Centralt läge — Hötorget tunnelbana</li>
+              <li>Ingen bokning krävs</li>
+              <li>Klart på 5 minuter för enkla ärenden</li>
+              <li>Kort och Swish-betalning</li>
+            </ul>
+            <div class="address-block">
+              <strong>Adress</strong>
+              Kungsgatan 37, 4:e våningen<br>
+              111 56 Stockholm
+              <span class="address-spacer"></span>
+              <strong>Telefon</strong>
+              +46 (0)8-5333 2080
+            </div>
+          </div>
+          <div class="dropin-map">
+            <div class="placeholder" data-label="Karta">
+              <span>[Karta: Kungsgatan 37, Stockholm]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="page-section" id="kontakt" data-annotation="FAQ — preempt vanliga frågor och inkommande supportärenden">
+      <div class="container">
+        <div class="section-header">
+          <h2>Vanliga frågor</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Vad är skillnaden mellan apostille och legalisering?</summary>
+            <div class="faq-answer">
+              <p>Apostille är en förenklad form av legalisering som godkänns mellan alla länder som är anslutna till Haagkonventionen. För länder utanför konventionen krävs istället en längre kedja som omfattar UD-legalisering och ambassadlegalisering. Vi tittar på mottagarlandet och rekommenderar rätt väg.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Hur lång tid tar processen?</summary>
+            <div class="faq-answer">
+              <p>För Haagkonventionsländer går det ofta klart samma dag om du kommer in på drop-in i Stockholm. Postärenden tar normalt 2–3 arbetsdagar. För ambassadlegalisering räknar vi med 1–3 veckor beroende på vilken ambassad som handlägger.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Måste jag skicka originalet eller räcker en kopia?</summary>
+            <div class="faq-answer">
+              <p>För apostille räcker det oftast med en bestyrkt kopia, men vissa länder kräver originaldokumentet. När du beställer hjälper vi dig att avgöra vad som krävs för just ditt mottagarland och din situation.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Vad gör jag om mitt dokument är på fel språk?</summary>
+            <div class="faq-answer">
+              <p>Många länder kräver översättning av en auktoriserad översättare. Vi har egna auktoriserade översättare i flera språk och kan ordna översättningen som en del av samma uppdrag. Översättningen apostillestämplas tillsammans med originalet.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Kan jag få hjälp om jag bor utomlands?</summary>
+            <div class="faq-answer">
+              <p>Ja. Vi hanterar regelbundet ärenden för svenskar och företag som befinner sig utomlands. Du skickar dokumenten till oss med posten eller via en lokal kontakt, och vi skickar tillbaka till din adress oavsett land.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="page-section page-section--accent cta-strip" data-annotation="Final CTA — sista chansen att starta konfiguratorn">
+      <div class="container">
+        <div class="cta-strip__inner">
+          <div>
+            <span class="eyebrow">Vi guidar dig hela vägen</span>
+            <h2>Osäker på vad du behöver?</h2>
+            <p>Berätta vart dokumentet ska, så visar vi exakt vad som krävs. Tar ca 30 sekunder.</p>
+          </div>
+          <div class="btn-row">
+            <a href="configurator.html" class="btn-primary btn-inverted">Starta konfiguratorn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-footer></footer>
+</body>
+</html>
